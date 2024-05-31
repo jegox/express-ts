@@ -8,7 +8,7 @@ export class ServerErrorMiddleware implements ErrorMiddleware {
     error: Error,
     request: Request,
     response: Response,
-    next: NextFunction,
+    next: NextFunction
   ) {
     console.log({ error });
     next();
