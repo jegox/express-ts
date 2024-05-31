@@ -1,6 +1,6 @@
 import express, { Application as ExApplication, Router } from 'express';
-import { UserController } from './infrastructure/controllers';
 import { attachControllers } from '@decorators/express';
+import { UserController } from '@infrastructure/controllers';
 
 class Application {
   private readonly _instance: ExApplication;

@@ -1,9 +1,9 @@
 import { Injectable } from '@decorators/di';
 import { ErrorMiddleware } from '@decorators/express';
-import { NextFunction } from 'express';
+import { NextFunction, Request, Response } from 'express';
 
 @Injectable()
-class ServerErrorMiddleware implements ErrorMiddleware {
+export class ServerErrorMiddleware implements ErrorMiddleware {
   public use(
     error: Error,
     request: Request,
